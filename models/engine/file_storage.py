@@ -10,6 +10,14 @@ from models.amenity import Amenity
 from models.place import Place
 from models.review import Review
 
+model = {"BaseModel": BaseModel,
+         "User": User,
+         "State": State,
+         "City": City,
+         "Amenity": Amenity,
+         "Place": Place,
+         "Review": Review
+         }
 
 class FileStorage:
     """This class manages storage of hbnb models in JSON format"""
@@ -18,12 +26,13 @@ class FileStorage:
 
     def all(self, cls=None):
         """Returns a dictionary of models currently in storage"""
-        if cls is not None:
-            new_dict = {}
-            for k, v in self.__objects.items():
-                if cls == v.__class__ or cls == v.__class__.__name__:
-                    new_dict[k] = v
-            return new_dict
+        if cls != None and self.__objects:
+            retob = {}
+            for key, value in self.__objects.items():
+                classname = (key.split('.'))[0]
+                if classname == cls.__name__:
+                    retob[key] = self.__objects[key]
+            return retob
         return self.__objects
 
     def new(self, obj):
@@ -59,13 +68,13 @@ class FileStorage:
             with open(FileStorage.__file_path, 'r') as f:
                 temp = json.load(f)
                 for key, val in temp.items():
-                    self.all()[key] = classes[val['__class__']](**val)
+                        self.all()[key] = classes[val['__class__']](**val)
         except FileNotFoundError:
             pass
 
     def delete(self, obj=None):
-        """delete obj from __objects"""
+        """ delete obj from __objects """
         if obj is not None:
-            key = obj.__class__.__name__ + "." + obj.id
-        if key in self.__objects:
-            del FileStorage.__objects[key]
+            k = obj.__class__.__name__ + "." + obj.id
+            del FileStorage.__objects[k]
+
