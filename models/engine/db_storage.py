@@ -1,76 +1,72 @@
 #!/usr/bin/python3
-"""New engine DBStorage"""
+"""Database Storage"""
 
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, scoped_session
-from os import getenv
-from models.base_model import Base
-from models.amenity import Amenity
-from models.city import City
-from models.state import State
+
 from models.user import User
+from models.base_model import BaseModel
+from models.base_model import Base
+import json
+from models.state import State
+from models.city import City
+from models.amenity import Amenity
 from models.place import Place
 from models.review import Review
+import sqlalchemy
+from os import getenv
+from sqlalchemy.orm import sessionmaker, scoped_session
+from sqlalchemy import create_engine
+
+model = {"User": User, "State": State,
+         "City": City, "Amenity": Amenity,
+         "Place": Place, "Review": Review}
 
 
-class DBStorage:
-    """DB Storage"""
-
+class DBStorage():
+    """Database"""
     __engine = None
     __session = None
 
     def __init__(self):
-        """init"""
-
-        host = getenv('HBNB_MYSQL_HOST')
-        database = getenv('HBNB_MYSQL_DB')
-        user = getenv('HBNB_MYSQL_USER')
-        passw = getenv('HBNB_MYSQL_PWD')
-
-        self.__engine = create_engine('mysql+mysqldb://{}:{}@{}/{}'.format(
-            user, passw, host, database), pool_pre_ping=True)
-
-        env = getenv('HBNB_ENV')
-        if (env == 'test'):
-            Base.metadata.drop_all(self.__engine)
+        """inisialization"""
+        self.__engine = create_engine(('mysql+mysqldb://{}:{}@{}/{}')
+                                        .format(getenv('HBNB_MYSQL_USER'),
+                                                getenv('HBNB_MYSQL_PWD'),
+                                                getenv('HBNB_MYSQL_HOST'),
+                                                getenv('HBNB_MYSQL_DB')),
+                                        pool_pre_ping=True)
+        if getenv('HBNB_ENV') == "test":
+            Base.meta.drop_all(bind=self.__engine)
 
     def all(self, cls=None):
-        """all"""
-
-        classes = {
-               'User': User, 'Place': Place,
-               'State': State, 'City': City, 'Amenity': Amenity,
-               'Review': Review
-              }
-        new_dict = {}
-        for clss in classes:
-            if cls is None or cls == classes[clss]:
-                objects = self.__session.query(classes[clss]).all()
-                for obj in objects:
-                    key = type(obj).__name__ + '.' + obj.id
-                    new_dict[key] = obj
-        return new_dict
+        """all func"""
+        objs = {}
+        for cclass in model:
+            if model[cclass] == cls or cls is None:
+                for key in self.__session.query(model[cclass]).all():
+                    objs[type(key).__name__+'.'+key.id] = key
+        return objs
 
     def new(self, obj):
         """new"""
-
         self.__session.add(obj)
 
     def save(self):
         """save"""
-
         self.__session.commit()
 
     def delete(self, obj=None):
         """delete"""
-
-        if obj is not None:
-            self.__sesion.delete(obj)
+        if obj == None:
+            self.__session.delete(obj)
+            self.save()
 
     def reload(self):
         """reload"""
         Base.metadata.create_all(self.__engine)
-        create_session = sessionmaker(bind=self.__engine,
-                                      expire_on_commit=False)
-        Session = scoped_session(create_session)
+        ssession = sessionmaker(bind=self.__engine, expire_on_commit=False)
+        Session = scoped_session(ssession)
         self.__session = Session
+
+    def close(self):
+        """close"""
+        self.__session.close()
