@@ -1,0 +1,405 @@
+[33mcommit e6c4cca7581fc876b12c7fea082f53ae91baca37[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: trenfranco <trenfranco@gmail.com>
+Date:   Wed Aug 10 13:18:25 2022 -0700
+
+    ex 6
+
+[33mcommit 9dbcb4ca4aca2982d63b35b9a85de3f3574ce6c5[m
+Author: Franco Trenche <98403340+trenfranco@users.noreply.github.com>
+Date:   Wed Aug 10 05:56:12 2022 -0300
+
+    Delete file.json
+
+[33mcommit c2d03b45c7732bba9b9b8b4dfff9355fbddcb59b[m
+Author: Franco Trenche <98403340+trenfranco@users.noreply.github.com>
+Date:   Wed Aug 10 05:55:55 2022 -0300
+
+    Delete a
+
+[33mcommit 1197101c066c61642de20b1931cb797fd3dc0990[m
+Author: Franco Trenche <98403340+trenfranco@users.noreply.github.com>
+Date:   Wed Aug 10 05:55:46 2022 -0300
+
+    Delete a.out
+
+[33mcommit ac8333b2c2114289a504d9636b1cae7467be2c50[m
+Author: Franco Trenche <98403340+trenfranco@users.noreply.github.com>
+Date:   Wed Aug 10 05:55:28 2022 -0300
+
+    missing names
+
+[33mcommit 546ba33acb52a0fc666822017332d1f1f950f607[m
+Author: trenfranco <trenfranco@gmail.com>
+Date:   Wed Aug 10 01:48:51 2022 -0700
+
+    syntax fixed
+
+[33mcommit 9ea9555ecf58cce8554cd6c81b63e3df663c942f[m
+Author: trenfranco <trenfranco@gmail.com>
+Date:   Wed Aug 10 01:45:55 2022 -0700
+
+    fix
+
+[33mcommit 1bca2736cf118ee76811b1f29c1771fff9ad84f3[m
+Author: trenfranco <trenfranco@gmail.com>
+Date:   Wed Aug 10 00:58:03 2022 -0700
+
+    fixes
+
+[33mcommit eb590cf7e5a45528cd9ceaab8e578508c98b46f6[m
+Author: trenfranco <trenfranco@gmail.com>
+Date:   Wed Aug 10 00:39:28 2022 -0700
+
+    ex 6
+
+[33mcommit a12dd1b7885655dda2d6e93daa22f073fcb9410c[m
+Author: trenfranco <trenfranco@gmail.com>
+Date:   Tue Aug 9 23:41:51 2022 -0700
+
+    ex 6 updated base model
+
+[33mcommit 588b14d54a0fe1182f87d8a0abf140caea8eaa12[m
+Author: trenfranco <trenfranco@gmail.com>
+Date:   Tue Aug 9 22:47:03 2022 -0700
+
+    ex 5 fixed
+
+[33mcommit bd39a05e468e3fb7ce45b0dbd03b54b49473d717[m
+Author: trenfranco <trenfranco@gmail.com>
+Date:   Tue Aug 9 22:43:59 2022 -0700
+
+    test
+
+[33mcommit 5d80ee0053f6a0f638511aa36ce4665ba48b8c4c[m
+Author: trenfranco <trenfranco@gmail.com>
+Date:   Tue Aug 9 22:41:46 2022 -0700
+
+    ex 5 fix
+
+[33mcommit 80d32e67dd2d40a8ddaca1ae4cc8e8d546fc1388[m
+Author: trenfranco <trenfranco@gmail.com>
+Date:   Tue Aug 9 22:39:31 2022 -0700
+
+    fix
+
+[33mcommit 303e3b8b67fea53bd1a40fec0e22b53322a40dbd[m
+Author: trenfranco <trenfranco@gmail.com>
+Date:   Tue Aug 9 22:35:00 2022 -0700
+
+    ex 5 fix
+
+[33mcommit fc9f5612941caf77e6f1fc85b8b180a83875606b[m
+Author: trenfranco <trenfranco@gmail.com>
+Date:   Tue Aug 9 22:20:45 2022 -0700
+
+    ex 5 fix
+
+[33mcommit b2c295c312c3097f3209f2af733a8f142e48ea3d[m
+Author: trenfranco <trenfranco@gmail.com>
+Date:   Tue Aug 9 22:12:31 2022 -0700
+
+    ex 5 fixed syntax
+
+[33mcommit 4e2ef684ad07b840b5b80a29c56f53697d93bbc2[m
+Author: trenfranco <trenfranco@gmail.com>
+Date:   Tue Aug 9 21:36:50 2022 -0700
+
+    fixed syntax
+
+[33mcommit 838e00daf1a942cb099525940720120ea8d5e949[m
+Author: trenfranco <trenfranco@gmail.com>
+Date:   Tue Aug 9 21:34:08 2022 -0700
+
+    fixed syntax
+
+[33mcommit 1a7ec2b5b0bba25cf3005732e5605f5b2790a102[m
+Author: trenfranco <trenfranco@gmail.com>
+Date:   Tue Aug 9 16:28:18 2022 -0700
+
+    ex 2 and pycodestyle
+
+[33mcommit fd034e423ff3f15aa46fef5586958f6a96d53b4d[m
+Author: FloLys <4440@holbertonschool.com>
+Date:   Tue Aug 9 13:17:59 2022 -0700
+
+    setup files
+
+[33mcommit cbaedfdd56b6e339a0af634cae7c81972e647043[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Tue Mar 3 16:59:33 2020 +0000
+
+    Create code for advanced tasks
+
+[33mcommit 6b3270d3b13489c85b46c566e6a121f7c94bafe6[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Mon Mar 2 04:14:56 2020 +0000
+
+    Add to README
+
+[33mcommit 5d61e3e2781bcbff2acf85e84483ca344af362c8[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Mon Mar 2 04:13:15 2020 +0000
+
+    Implement flexboxes
+
+[33mcommit 5e14fce17e59fab91d47a3f224a3306b51ffb4b9[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Mon Mar 2 04:10:40 2020 +0000
+
+    Implement full details
+
+[33mcommit 0a7b5ac1e5db3312416eb21f393148559e02ed68[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Sun Mar 1 20:58:19 2020 +0000
+
+    Implement places articles
+
+[33mcommit 87f2bf6fbfe0d8a8cd0fce5708afacfa825e7f2a[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Sat Feb 29 18:57:26 2020 +0000
+
+    Implement place articles
+
+[33mcommit 4380156adde37d10474aeca0b496cd2afcc4a080[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Sat Feb 29 16:32:51 2020 +0000
+
+    Implement dropdown lists
+
+[33mcommit 573c1d32e7d63576d5569bb20a506dcc79952648[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Fri Feb 28 18:16:12 2020 +0000
+
+    Implement fields in search bar
+
+[33mcommit ce29bdc044041a77af71e7243a6a463d7bbb9d7d[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Fri Feb 28 17:34:22 2020 +0000
+
+    Implement search bar
+
+[33mcommit 445abbd58fb0b22b8e7b082af843e99ebbf06207[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Fri Feb 28 16:25:27 2020 +0000
+
+    Add missing semi-colon
+
+[33mcommit c23ae720ca9fc28453017c200e198fad08597701[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Fri Feb 28 15:10:45 2020 +0000
+
+    Update to properly display logo
+
+[33mcommit c5f9598754c64170912ba0d1bd1b043fe08d067f[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Fri Feb 28 00:23:58 2020 +0000
+
+    Add logo/icon images
+
+[33mcommit 21703d7f7e4d5bb97d69a9c0bd2628297e8a08fa[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Fri Feb 28 00:22:54 2020 +0000
+
+    Implement logo and initial coloring
+
+[33mcommit b30ea9a16beff2989b726057a1163188ba2e3d5e[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Thu Feb 27 22:46:27 2020 +0000
+
+    Update vertical centering method in footer
+
+[33mcommit 850b8b6cc7306b9bb749f261b0677d8d7c0e9739[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Thu Feb 27 22:45:14 2020 +0000
+
+    Implement external stylesheets
+
+[33mcommit 0ce244acef935d8d5a98f547293b5880fd9249b2[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Thu Feb 27 20:13:39 2020 +0000
+
+    Create empty README
+
+[33mcommit 74aecefc2f78a0b2c9c378123fa56b1b0a6d79c5[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Thu Feb 27 20:13:25 2020 +0000
+
+    Reduce text padding to 6px
+
+[33mcommit ffccb81944c55c5f9e36f240a3705ed1a20a4e61[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Thu Feb 27 20:12:53 2020 +0000
+
+    Move styling into head
+
+[33mcommit 09f06e18b5ca5c70e49d2738871351d2d04b20c6[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Thu Feb 27 19:57:55 2020 +0000
+
+    Adjust footer text padding
+
+[33mcommit 962dbbcfaa53f9206cc07e8cbb42568988cafdd4[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Thu Feb 27 19:56:20 2020 +0000
+
+    Adjust footer text padding
+
+[33mcommit 24987836cefcd9019990015790506701d1cd7ae9[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Thu Feb 27 19:54:01 2020 +0000
+
+    Fix typos in in-line styling
+
+[33mcommit 465bc7f2c0d37c0272d11ccb2f5239817f126432[m
+Merge: 8366fcf 721ea94
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Thu Feb 27 18:48:22 2020 +0000
+
+    Merge branch 'master' of https://github.com/justinmajetich/AirBnB_clone
+
+[33mcommit 8366fcf18fcf7938e8e505b743a7fb14a828dddb[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Thu Feb 27 18:47:41 2020 +0000
+
+    Draft index for task 0
+
+[33mcommit 721ea94763af9f3b8f2f79d567e0e096936d5b89[m
+Author: eNobreg <ezra.nobrega@outlook.com>
+Date:   Wed Feb 19 18:34:01 2020 -0500
+
+    Added on break statement
+
+[33mcommit f6696dab6f262ae7cf006aacfa28ecd093a964e7[m
+Author: eNobreg <ezra.nobrega@outlook.com>
+Date:   Wed Feb 19 17:38:02 2020 -0500
+
+    Added another break to the README
+
+[33mcommit e1daf096d8dee0731966eed11654abe18a78ef3b[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Wed Feb 19 22:31:34 2020 +0000
+
+    Update README
+
+[33mcommit ebb59698f46bc5ab3f371514be623d1f17edf512[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Wed Feb 19 21:19:44 2020 +0000
+
+    Add tests for storage
+
+[33mcommit 028380be4a2ff52effa5598c2fc61e890a5214d5[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Wed Feb 19 20:20:57 2020 +0000
+
+    Add tests for save methods
+
+[33mcommit 9365777b2862d6b660623feb1f5a30d8791ae850[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Wed Feb 19 19:52:04 2020 +0000
+
+    Add unittests for file_storage module
+
+[33mcommit 7090a8bf412e1082f30027976113be3869893e61[m
+Author: eNobreg <ezra.nobrega@outlook.com>
+Date:   Wed Feb 19 13:15:08 2020 -0500
+
+    Changed test to be more dynamic
+
+[33mcommit db2d32c625cf76f7f9dec3407e08dd01f97412ff[m
+Author: eNobreg <ezra.nobrega@outlook.com>
+Date:   Wed Feb 19 13:06:52 2020 -0500
+
+    Removed console tests
+
+[33mcommit b448d74afcbff9d2310a3b6fdcde2a21770d755c[m
+Merge: 18e53c8 ff42f69
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Wed Feb 19 18:03:03 2020 +0000
+
+    Merge branch 'master' of https://github.com/justinmajetich/AirBnB_clone
+
+[33mcommit 18e53c85d01f62f772d32982e2ccf9b31cb08562[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Wed Feb 19 18:02:43 2020 +0000
+
+    Resolve error messaging issues
+
+[33mcommit ff42f69daad9adba4348bdac884a04eb85debc28[m
+Author: eNobreg <ezra.nobrega@outlook.com>
+Date:   Wed Feb 19 12:43:11 2020 -0500
+
+    Added three tests for console
+
+[33mcommit ecee69903ad47688cb7c5fbf52238d11d15a634b[m
+Author: eNobreg <ezra.nobrega@outlook.com>
+Date:   Tue Feb 18 22:44:28 2020 -0500
+
+    Added help for count
+
+[33mcommit 57f8dd77419b71b95942167d72f0eb7fbcd39a7c[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Wed Feb 19 01:22:59 2020 +0000
+
+    Remove tracer statements
+
+[33mcommit 56537c88089d71d9f0b1d2a55ed6c1a81b1d7a04[m
+Merge: 81906f7 e6f3ac1
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Wed Feb 19 01:19:16 2020 +0000
+
+    Merge branch 'master' of https://github.com/justinmajetich/AirBnB_clone
+
+[33mcommit 81906f76a6566e172e87e6f7e0eed6b225e44457[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Wed Feb 19 01:19:09 2020 +0000
+
+    Implement parsing of multiword, quoted arguments
+
+[33mcommit e6f3ac1a3f0d5d3a58d64a7dbcb26c8a3a49dc7b[m
+Author: eNobreg <ezra.nobrega@outlook.com>
+Date:   Tue Feb 18 20:14:51 2020 -0500
+
+    Added two tests for file storage to test checks
+
+[33mcommit c29ea542b2437f6a0e7405cad9d198afa30e0b71[m
+Author: eNobreg <ezra.nobrega@outlook.com>
+Date:   Tue Feb 18 19:57:10 2020 -0500
+
+    Pep8 compliancy for all test files, made a couple executable
+
+[33mcommit da9ddc41d7932a958c9b9b701e5c1c1c6f1aec22[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Wed Feb 19 00:22:43 2020 +0000
+
+    Add blank line after import
+
+[33mcommit 14ebec9a6ec336569d8eca36b65abd55edabb2f2[m
+Merge: 3a1259f c5356f8
+Author: Justin Majetich <53100688+justinmajetich@users.noreply.github.com>
+Date:   Tue Feb 18 19:14:17 2020 -0500
+
+    Merge pull request #4 from justinmajetich/dev
+    
+    Move import statements for more specific calls
+
+[33mcommit c5356f8f3fa92f2ed70f72c70be612161f3b2fa3[m
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Wed Feb 19 00:13:13 2020 +0000
+
+    Move import statements for more specific calls
+
+[33mcommit 3a1259f6f01f121b51a0675a20b3b5c75f0f2485[m
+Merge: 05fb614 5754694
+Author: Justin Majetich <53100688+justinmajetich@users.noreply.github.com>
+Date:   Tue Feb 18 18:59:58 2020 -0500
+
+    Merge pull request #3 from justinmajetich/dev
+    
+    Dev
+
+[33mcommit 5754694fa54a6729c6714c66da13536710555b20[m
+Merge: 2b24da9 05fb614
+Author: justinmajetich <justinmajetich@gmail.com>
+Date:   Tue Feb 18 23:57:52 2020 +0000
+
+    Merge branch 'master' of https://github.com/justinmajetich/AirBnB_clone into dev
