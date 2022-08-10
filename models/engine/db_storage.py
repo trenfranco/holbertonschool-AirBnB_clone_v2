@@ -22,18 +22,18 @@ model = {"User": User, "State": State,
 
 
 class DBStorage():
-    """Database"""
+    """DB"""
     __engine = None
     __session = None
 
     def __init__(self):
         """inisialization"""
         self.__engine = create_engine(('mysql+mysqldb://{}:{}@{}/{}')
-                                        .format(getenv('HBNB_MYSQL_USER'),
-                                                getenv('HBNB_MYSQL_PWD'),
-                                                getenv('HBNB_MYSQL_HOST'),
-                                                getenv('HBNB_MYSQL_DB')),
-                                        pool_pre_ping=True)
+                                      .format(getenv('HBNB_MYSQL_USER'),
+                                              getenv('HBNB_MYSQL_PWD'),
+                                              getenv('HBNB_MYSQL_HOST'),
+                                              getenv('HBNB_MYSQL_DB')),
+                                      pool_pre_ping=True)
         if getenv('HBNB_ENV') == "test":
             Base.meta.drop_all(bind=self.__engine)
 
@@ -56,9 +56,8 @@ class DBStorage():
 
     def delete(self, obj=None):
         """delete"""
-        if obj == None:
+        if obj is None:
             self.__session.delete(obj)
-            self.save()
 
     def reload(self):
         """reload"""
