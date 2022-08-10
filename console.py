@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """ Console Module """
 import cmd
 import sys
@@ -116,32 +115,42 @@ class HBNBCommand(cmd.Cmd):
 
     def do_create(self, args):
         """ Create an object of any class"""
-        if not args:
+        arg = args.split(" ")
+        param = arg[1:]
+        if len(args) == 0:
             print("** class name missing **")
             return
-        tokens = args.split(" ")
-        if tokens[0] not in HBNBCommand.classes:
+        elif arg[0] not in HBNBCommand.classes:
             print("** class doesn't exist **")
             return
-        new_instance = HBNBCommand.classes[tokens[0]]()
-        del tokens[0]
-        for i in tokens:
-            kv = i.split("=")
-            k = kv[0]
-            v = kv[1]
-            if v[0] == '"':
-                v = v.replace("_", " ")
-                v = v[1:-1]
-                v = v.replace('\\"', '"')
-            elif "." in v:
-                v = float(v)
-            else:
-                v = int(v)
-            setattr(new_instance, k, v)
-
-        storage.save()
-        print(new_instance.id)
-        storage.save()
+        obj = eval("{}()".format(arg[0]))
+        for i in param:
+            value = i.split('=', 1)
+            """ que corte solo 1 vez por el char = """
+            if len(value) > 1:
+                if '"' not in value[1] and '.' not in value[1]:
+                    """ si no tiene comillas ni punto es tipo int """
+                    try:
+                        value[1] = int(value[1])
+                    except Exception:
+                        continue
+                elif '.' in value[1]:
+                    """ si tiene punto es tipo float """
+                    try:
+                        value[1] = float(value[1])
+                    except Exception:
+                        continue
+                elif value[1][0] == '"':
+                    """ si empieza con comillas es string """
+                    value[1] = (value[1])[1:-1]
+                    value[1] = value[1].replace('\\"', '"')
+                    value[1] = value[1].replace('_', ' ')
+                try:
+                    setattr(obj, value[0], value[1])
+                except Exception:
+                    pass
+        print(obj.id)
+        obj.save()
 
     def help_create(self):
         """ Help information for the create method """
@@ -172,7 +181,7 @@ class HBNBCommand(cmd.Cmd):
 
         key = c_name + "." + c_id
         try:
-            print(storage._FileStorage__objects[key])
+            print(storage.all()[key])
         except KeyError:
             print("** no instance found **")
 
@@ -223,11 +232,11 @@ class HBNBCommand(cmd.Cmd):
             if args not in HBNBCommand.classes:
                 print("** class doesn't exist **")
                 return
-            for k, v in storage._FileStorage__objects.items():
+            for k, v in storage.all(self.classes[args]).items():
                 if k.split('.')[0] == args:
                     print_list.append(str(v))
         else:
-            for k, v in storage._FileStorage__objects.items():
+            for k, v in storage.all().items():
                 print_list.append(str(v))
 
         print(print_list)
