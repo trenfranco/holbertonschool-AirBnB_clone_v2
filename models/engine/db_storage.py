@@ -28,7 +28,7 @@ class DBStorage():
 
     def __init__(self):
         """inisialization"""
-        self.__engine = create_engine(('mysql+mysqldb://{}:{}@{}/{}')
+        self.__engine = create_engine("mysql+mysqldb://{}:{}@{}/{}"
                                       .format(getenv('HBNB_MYSQL_USER'),
                                               getenv('HBNB_MYSQL_PWD'),
                                               getenv('HBNB_MYSQL_HOST'),
@@ -58,7 +58,6 @@ class DBStorage():
         """delete"""
         if obj is None:
             self.__session.delete(obj)
-            self.save()
 
     def reload(self):
         """reload"""
