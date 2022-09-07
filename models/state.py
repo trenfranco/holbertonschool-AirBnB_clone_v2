@@ -18,10 +18,11 @@ class State(BaseModel, Base):
     else:
         @property
         def cities(self):
-            """cities"""
             from models import storage
-            stacit = []
-            for stat in storage.all(City).values():
-                if self.id == city.state_id:
-                    stacit.append(storage.all(City)[stat])
-            return stacit
+            all_cities = storage.all(City).values()
+
+            new_list = []
+            for city in all_cities:
+                if (city.state_id == self.id):
+                    new_list.append(city)
+            return new_list
